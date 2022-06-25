@@ -4,6 +4,15 @@ public class uzduotis2 {
          double  a = 3;
          double b = 2;
          double c = 2;
+       int x = (int) 3.3;
+       int y = (int) 3.8;
+       int z = (int) 3.3;
+      int P = (int) trikampioPerimetras(x,y,z);
+        System.out.println("Perimetras2 = " + P);
+        double S1 = plotas(P,x,y,z);
+        System.out.println("S2 = " + S1);
+
+
 
         double p = trikampioPerimetras( a,b,c);
         System.out.println("Perimetras= " + p);
