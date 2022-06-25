@@ -1,23 +1,34 @@
 public class uzduotis2 {
 
     public static void main(String[] args) {
-        double krastineA = 3;
-        double krastineB = 2.6;
-        double krastineC = 2.6;
+         double  a = 3;
+         double b = 2;
+         double c = 2;
 
-        double perimetras = trikampioPerimetras( krastineA,krastineB,krastineC);
-        System.out.println("perimetras = " + perimetras);
-        int a = 2;
-        int b = 4;
-        int c = 2;
+        double p = trikampioPerimetras( a,b,c);
+        System.out.println("Perimetras= " + p);
+
+        double S = plotas(p,a,b,c);
+        System.out.println("Plotas = " + S);
 
 
-        int perimetrasABC = (int) trikampioPerimetras(a,b,c);
-        System.out.println("perimetrasABC= " + perimetrasABC);
+
+
 
 
     }
 
     public static double trikampioPerimetras(double a ,double b,double c )
-    {return a + b +c ;}
+    {return  a + b +c ;}
+
+    public static double plotas(double p,double a,double b,double c) {
+     double  plotas =Math.sqrt(p*(p-a)*(p-b)*(p-c)) ;
+        return plotas;
     }
+
+
+
+    }
+
+
+
